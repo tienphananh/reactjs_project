@@ -1,0 +1,393 @@
+body {
+    /* mặc định thì sẽ hở 8px nên phải xét margin 0 */
+    /* gọi body thì ko cần . */
+    margin: 0;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    background-color: #e7e6e8;
+    /* position fixed ghim vij trí */
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    /* độ ưu tiên cao nhất */
+    z-index: 100;
+}
+.logo{
+    /* giới hạn độ to của khung hình chứa logo */
+    width: 10%;
+}
+/* độ to của logo trong khung */
+.logo img{
+    width:100%;
+}
+/* chỉnh khoảng cách viền xanh đến chữ */
+.mid-header{
+    margin-top: 50px;
+}
+/* khi gọi mid header thì phải gọi thêm thẻ a thì mới sửa được chữ */
+ .mid-header a{  
+    /* text-decoration:none để làm mất dấu gạch dưới */
+    text-decoration: none;
+    /* margin là khoảng cách giữa các chữ */
+    margin: 15px;
+    /* font-weight chỉnh font chữ */
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    /* chỉnh font chữ */
+    font-family:Arial, Helvetica, sans-serif;
+}
+.last-header {
+    display: flex;
+    margin-top: 35px;   
+
+}
+.search-header{
+    margin-right: 20px;
+}
+.search-header i{
+    margin-right: 5px;
+}
+.search-header input{
+    /* border chỉnh mất khung viền */
+    border:none;
+    /* background màu nền trong khung*/
+    background: #f5f5f5; 
+    /* màu chữ */
+    color: #707072;
+    /* làm tròn viền khung */
+    border-radius: 50px;
+    /*khoảng cách trong hộp  */
+    padding: 8px;
+    /* chiều rộng của khung */
+    width: 140px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.last-header-2{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.last-header-2 i{
+    margin-right: 18px;
+}
+/* body */
+.body-shop {
+    display: flex;
+    margin-top: 50px;
+    /* flex-wrap bọc lại xuống dòng */
+    flex-wrap: wrap;
+    /* căn ra space-around cách các ảnh ra */
+    justify-content:space-around;
+    margin-top: 170px;
+    /* gap khoảng cách giữa 2 div */
+    gap: 35px;
+    
+}
+.shop-1 {
+    width: 300px;
+    background-color:rgb(251, 251, 251);
+    padding: 15px 20px;
+    border-radius:20px ;
+    /* đổ bóng */
+    box-shadow: 0 5px 9px black;
+    /* mất 0.3s giây để nổi */
+    transition:transform 0.3s;
+}
+.shop-1:hover{
+    /* khoảng cách lên xuống */
+    transform: translateY(-30px);
+}
+.shop-img{
+    /* chỉnh thành px khi dùng wrap */
+    width: 300px;
+}
+.shop-img img {
+    border-radius: 20px;
+    width: 100%;
+}
+.shop-des {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.shop-des a {
+    text-decoration: none;
+}
+ .shop-des a:first-child { 
+    /* nếu chỉnh a ko thì tất cả đều bị thay đổi nên dùng first child để chỉ nhận cái đầu tiên  */
+    font-weight: bold;
+    color: black; 
+}
+.shop-des a:first-child:hover {
+    color: #707072;
+}
+.shop-des p {
+    color: #707072;
+    /* chiều cao giữa các dòng */
+    line-height: 80%;
+}
+.price-tag p {
+    color: black;
+}
+.shop-des p:hover {
+    color:black ;
+}
+.price-tag p:hover {
+    color: #707072;
+}
+    
+
+/* footer */
+.footer {
+    display: flex;
+    /* căn ra hai bên dùng justify-content: space-between */
+    justify-content: space-between;
+    margin-top: 100px;
+    /* căn lền 2 bên 0 là trên dưới,50 là trái phải */
+    padding: 0 70px;
+}
+.footer-des {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+.footer-des-1 {
+    margin-right: 200px;   
+}
+
+.footer-des-1 a{
+    text-decoration: none;
+    color: #70707b;
+   
+}
+.des-1-1 {
+    margin-bottom: 40px;
+}
+.footer-vietnam a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+.last-footer {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #70707b;
+}
+.last-1 {
+margin-top: 16.5px;
+margin-right: 20px;
+}
+.last-footer {
+    padding: 0 70px;
+}
+.last-footer a{
+    margin-right: 25px;
+    text-decoration: none;
+    color: #70707b;
+    
+}
+.last-footer a:hover {
+    color: black;
+}
+.footer-vietnam a:hover {
+color: #707072;
+margin-left: 10px;
+}
+
+body{
+    margin: 0;
+ }
+.header{
+    display:flex;
+    justify-content: space-between;
+    z-index: 100;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-color: #e7e6e8;
+}
+.logo{
+    /* giới hạn độ to của khung hình chứa logo */
+    width: 10%;
+}
+/* độ to của logo trong khung */
+.logo img{
+    width:100%;
+}
+/* chỉnh khoảng cách viền xanh đến chữ */
+.mid-header{
+    margin-top: 50px;
+}
+/* khi gọi mid header thì phải gọi thêm thẻ a thì mới sửa được chữ */
+ .mid-header a{  
+    /* text-decoration:none để làm mất dấu gạch dưới */
+    text-decoration: none;
+    /* margin là khoảng cách giữa các chữ */
+    margin: 15px;
+    /* font-weight chỉnh font chữ */
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    /* chỉnh font chữ */
+    font-family:Arial, Helvetica, sans-serif;
+}
+.last-header {
+    display: flex;
+    margin-top: 35px;   
+
+}
+.search-header{
+    margin-right: 20px;
+}
+.search-header i{
+    margin-right: 5px;
+}
+.search-header input{
+    /* border chỉnh mất khung viền */
+    border:none;
+    /* background màu nền trong khung*/
+    background: #f5f5f5; 
+    /* màu chữ */
+    color: #707072;
+    /* làm tròn viền khung */
+    border-radius: 50px;
+    /*khoảng cách trong hộp  */
+    padding: 8px;
+    /* chiều rộng của khung */
+    width: 140px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.last-header-2{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.last-header-2 i{
+    margin-right: 18px;
+}
+.body-web{
+    /* block để theo hàng dọc */
+    display: block;
+    margin-top: 50px;
+    
+}
+.body-web-img{
+    width: 93%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.body-web-img img{
+    width: 100%;
+    height: auto;
+}
+.body-web-des{
+    /* cho chữ chồng lên nhau */
+    display: grid;
+    /* căn chỉnh chữ ra giữa */
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    margin-top: 40px;
+    line-height: 30px;
+}
+.des-1{
+    font-size: large;
+    font-weight: bold;
+}
+.des-2{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.des-3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.button-des{
+    /*margin-left: 678px;*/
+    border-radius: 50px;
+    padding: 10px 35px;
+    background: #111111;
+    color: #f5f5f5;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* hiện bàn tay khi chỉ vào */
+    cursor: pointer;
+    /* thời gian thực hiện */
+    transition: 1s;
+}
+/* chỉnh màu khi đưa chuột vào */
+.button-des:hover{
+    opacity:inherit ;
+    background-color: #707072;
+}
+.footer {
+    display: flex;
+    /* căn ra hai bên dùng justify-content: space-between */
+    justify-content:space-between;
+    margin-top: 100px;
+    /* căn lền 2 bên 0 là trên dưới,50 là trái phải */
+    padding: 0 70px;
+}
+.footer-des {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+.footer-des-1 {
+    margin-right: 200px;   
+}
+
+.footer-des-1 a{
+    text-decoration: none;
+    color: #70707b;
+   
+}
+.des-1-1 {
+    margin-bottom: 40px;
+}
+.footer-vietnam a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+.last-footer {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #70707b;
+}
+.last-1 {
+margin-top: 16.5px;
+margin-right: 20px;
+}
+.last-footer {
+    padding: 0 70px;
+}
+.last-footer a{
+    margin-right: 25px;
+    text-decoration: none;
+    color: #70707b;
+    
+}
+.last-footer a:hover {
+    color: black;
+}
+.footer-vietnam a:hover {
+color: #707072;
+margin-left: 10px;
+}
+
+.button-shop {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+
+
+
